@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c468133a.css",
+    "main.js": "/static/js/main.52595133.js",
+    "static/js/787.30997ba7.chunk.js": "/static/js/787.30997ba7.chunk.js",
+    "static/media/Psoriasis.jpg": "/static/media/Psoriasis.9e3e3cec526b049dd1ae.jpg",
+    "static/media/vitiligo4.jpg": "/static/media/vitiligo4.fb29b87e73e00990fb94.jpg",
+    "static/media/remixicon.svg?t=1687271883607": "/static/media/remixicon.636515c9a8963df4380d.svg",
+    "static/media/leucoderma.jpg": "/static/media/leucoderma.2a4e1458ba973a9ea153.jpg",
+    "static/media/vitiligo5.jpg": "/static/media/vitiligo5.8e8167772fe19e96d607.jpg",
+    "static/media/homeimage.png": "/static/media/homeimage.71dfa9d01c4c57ba075f.png",
+    "static/media/special offer.png": "/static/media/special offer.65565e26f6a61aa505ec.png",
+    "static/media/background1.jpg": "/static/media/background1.66f0e86f1b43fb233f15.jpg",
+    "static/media/remixicon.eot?t=1687271883607": "/static/media/remixicon.83e9a22ce7f199999169.eot",
+    "static/media/remixicon.ttf?t=1687271883607": "/static/media/remixicon.0bcb16fc20c3d365da14.ttf",
+    "static/media/Nature.png": "/static/media/Nature.97f7fef6c7c199564059.png",
+    "static/media/remixicon.woff?t=1687271883607": "/static/media/remixicon.3f0f84f17d39491e07ff.woff",
+    "static/media/remixicon.woff2?t=1687271883607": "/static/media/remixicon.85992a032c7668836563.woff2",
+    "static/media/acne.jpg": "/static/media/acne.70a2a401a2c481b308fe.jpg",
+    "static/media/psoriasis 1.jpg": "/static/media/psoriasis 1.900acb930b70318ac605.jpg",
+    "static/media/Vitiligo.jpg": "/static/media/Vitiligo.9c7652ac2c39925a2159.jpg",
+    "static/media/Main frame.jpg": "/static/media/Main frame.b2623bb4ec6ad3ab1d91.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.c468133a.css.map": "/static/css/main.c468133a.css.map",
+    "main.52595133.js.map": "/static/js/main.52595133.js.map",
+    "787.30997ba7.chunk.js.map": "/static/js/787.30997ba7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c468133a.css",
+    "static/js/main.52595133.js"
+  ]
+}

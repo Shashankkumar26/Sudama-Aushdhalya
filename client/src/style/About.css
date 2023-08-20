@@ -1,0 +1,103 @@
+/* About.css */
+.about-container {
+    background-image: url('../images/background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh; /* This will ensure the background covers the entire viewport height */
+    /* Add other styles for your About page content here */
+    color: white;
+  }
+  /* About.css */
+
+.hell {
+  padding:40px;
+}
+
+.about-heading {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub-heading {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.services-list {
+  list-style-type: decimal;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.service-item {
+  margin-bottom: 10px;
+}
+
+.about-para {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Optional: You can add additional styling for images if needed */
+.about-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Add styles for the "Experience the Magic of Ayurveda Today!" heading */
+.experience-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Optional: Add styles for the concluding paragraph */
+.concluding-para {
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Optional: You can customize the list style for the "Customer Care and Support" section */
+.customer-care-list {
+  list-style-type: circle;
+  margin-left: 30px;
+}
+@media screen and (max-width: 768px) {
+  .hell {
+    padding:15px;
+  }
+  .about-container {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+  .about-heading {
+    font-size: 28px; /* Decrease font size for smaller screens */
+  }
+  .sub-heading {
+    font-size: 22px; /* Decrease font size for smaller screens */
+  }
+  .experience-heading {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+  .concluding-para {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+  .services-list {
+    margin-left: 20px; /* Adjust left margin for smaller screens */
+  }
+  .about-image {
+    max-width: 100%; /* Adjust image size for smaller screens */
+  }
+}
+
+  

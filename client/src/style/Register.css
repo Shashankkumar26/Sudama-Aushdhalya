@@ -1,0 +1,69 @@
+/* Register.css */
+
+.register-form {
+
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the button on hover */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles for smaller screens (e.g., mobile devices) */
+  @media screen and (max-width: 768px) {
+    .register-form {
+      max-width: 100%;
+    
+    }
+    input[type="text"] {
+      padding: 8px; /* Reduce input padding for smaller screens */
+    }
+    button {
+      padding: 10px; /* Reduce button padding for smaller screens */
+    }
+  }
+  

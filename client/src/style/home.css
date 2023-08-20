@@ -1,0 +1,429 @@
+/* General Styles */
+
+** {
+  font-family: 'Roboto', sans-serif; /* Use the Roboto font as the default font for the body */
+}
+
+/* Set 100% width for the body and center its content */
+.body {
+ 
+  width: 100%;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.homeimag1 {
+  display: flex;
+  max-width: 100%;
+  max-height: 500px;
+  border: 4px solid whitesmoke;
+  border-radius: 10px;
+}
+
+.quote {
+  margin-top: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.ri-radio-button-line {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ri-radio-button-line:hover {
+  color: blueviolet;
+}
+
+.quotetheme {
+  background-color: #7E31E0;
+  max-width: 100;
+  min-width: 60%;
+  padding: 18px;
+  color: white;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.quotetheme p {
+  font-size: 100%;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.data-introduction h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #7E31E0;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.data-introduction p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.data-introduction ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.data-introduction li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+
+.testimonial-slide {
+ 
+  min-height: 100px;
+  /* Set the initial size of all slides (including the middle slide) */
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+.slick-center .testimonial-slide {
+  transform: scale(1.1); /* Increase the size of the middle slide */
+}
+
+@media (max-width: 600px) {
+  .quotetheme p {
+    font-size: 80%;
+  }
+}
+
+.treatment {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.disease-detail{
+  margin-bottom: 40px;
+}
+.disease {
+  display: flex;
+ 
+  justify-content: center;
+}
+
+.disease > div {
+ 
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Button Styles */
+.disease > div {
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  margin: 10px;
+  
+}
+
+.disease > div:hover {
+  background-color: #0056b3;
+}
+.disease-image {
+  width: 1080px;
+  height:720px;
+  
+  border: 2px solid #ccc; /* Add a border around the image */
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  min-height: 200px; /* Set a minimum height for all images */
+}
+.disease-image:hover {
+  transform: scale(1.05);
+}
+.dataname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-top:20px;
+  margin: 10px 15px 20px;
+  background-color: #7E31E0; /* Add the desired background color */
+  border-radius: 10px;
+  color: white; /* Set the font color to white */
+  font-size: 24px; /* Update the font size */
+  font-weight: bold; /* Add font-weight for emphasis */
+  padding: 12px 15px 14px;
+}
+.data-introduction {
+  text-align :left;
+  font-size: 18px;
+  
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  background-image: linear-gradient(#f2f2f2, #e0e0e0);
+}
+.data-introduction button{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #7E31E0;
+  color:white;
+  border:none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+
+}
+.data-introduction button:hover{
+  background-color: #541da1;
+}
+.Testimonial {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.testimonial-container {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.Testimonial h1{
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+.testimonial-slide {
+  padding: 20px;
+  min-height: 100px;
+}
+
+.testimonial-content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  min-height: 300px;
+  
+}
+
+.testimonial-content h2 {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.testimonial-content p{
+  font-size: 18px;
+}
+
+.location {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15px;
+  
+}
+
+.location i {
+  font-size: 20px;
+  background-color: #d18323; /* Add orange background color */
+  color: #fff;
+  padding: 6px;
+  border-radius: 50%; /* Rounded background for the icon */
+  
+}
+
+.location span {
+  font-size: 16px;
+}
+.testimonial-content{
+  display: flex;
+}
+.testimonial-container .arrow{
+  font-size: 40px;
+  
+}
+.arrow {
+  font-size: 24px; /* Set the font size for the arrow icons */
+   /* Set the initial background color to black */
+  color: black; /* Set the initial arrow color to black */
+  padding: 8px; /* Add padding around the arrow icon */
+  border-radius: 50%; /* Make the arrow icon circular */
+  cursor: pointer; /* Add a pointer cursor on hover to indicate interactivity */
+  transition: background-color 1s, color 1s; /* Add a transition effect for background-color and color changes with a 1-second duration */
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Set the background color to black with 80% transparency on hover */
+  color: white; /* Set the arrow color to white on hover */
+}
+
+/* Arrange left and right arrows in the same row */
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add spacing between the arrows */
+.arrow-container .arrow {
+  margin: 5px;
+}
+
+
+@media (max-width: 1080px) {
+  .disease-image {
+    width: 80% ;
+     height:70% /* Adjust the maximum height for larger screens */
+  }
+  .data-introduction h5{
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+
+/* Media Query for smaller screens (tablets and smaller) */
+@media (max-width: 767px) {
+  /* Body container */
+  .body {
+    padding: 5px;
+  }
+
+  /* Home image */
+  .homeimag1 {
+    max-height: 300px;
+  }
+
+  /* Quote section */
+  .quote {
+    margin-top: 20px;
+  }
+
+  .quotetheme {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Icons section */
+  .icons {
+    margin-top: 20px;
+  }
+
+  .ri-radio-button-line {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  /* Disease types section */
+  .disease {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .disease > div {
+    flex-basis: 45%;
+    margin: 5px;
+  }
+
+  /* Disease detail section */
+  .disease-detail {
+    font-size: 12px;
+    padding: 10px;
+  }
+ 
+
+  /* Testimonial section */
+  
+  /* Adjust styles for the dataname section */
+  .dataname {
+    margin: 5px 10px 10px;
+  }
+
+  .dataname div {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .disease-image {
+    min-height: 150px; /* Set a different minimum height for smaller images */
+  }
+  .dataname {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .data-introduction {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+  .data-introduction h3 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .data-introduction p {
+    font-size: 16px;
+  }
+
+  .data-introduction ul {
+    font-size: 16px;
+  }
+
+  .data-introduction li {
+    font-size: 16px;
+  }
+  .data-introduction h4{
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .testimonial-slide {
+    padding: 10px;
+    transform: scale(1);
+    
+  }
+  
+  .testimonial-content {
+    padding: 10px;
+    min-height: 220px;
+  }
+
+  .testimonial-content h2 {
+    font-size: 20px;
+  }
+  .location{
+    margin: 15px 6px 0px 0px;
+  }
+  .location i {
+    font-size: 18px;
+    padding: 6px;
+    margin-right: 5px;
+  }
+  .location p{
+    font-weight:700;
+  }
+
+  .location span {
+    font-size: 14px;
+  }
+ 
+}
+
+
