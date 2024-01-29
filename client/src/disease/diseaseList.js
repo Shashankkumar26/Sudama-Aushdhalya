@@ -11,7 +11,9 @@ import img10 from '../images/leucoderma.jpg'
 import img11 from '../images/Nature.png'
 import img12 from '../images/special offer.png'
 import img13 from '../images/homeimage.png'
-
+import img14 from '../images/Acn3.jpg' 
+import img15 from '../images/Acn4.jpg' 
+import img16 from '../images/Psoriasis-2.jpg' 
 export const main= [    img9, img13, img11]
 
 
@@ -34,7 +36,7 @@ export const DiseaseList =[
 
       {
         name: "Psoriasis",
-        image: [img6, img7],
+        image: [img6, img7,img16],
         introduction: `In Ayurveda, Psoriasis is known as 'Ekakushta,' which translates to 'one that affects the skin.' It is considered a chronic skin disorder caused by an imbalance in the body's doshas – Vata, Pitta, and Kapha – along with the accumulation of toxins (ama) in the body. Ayurveda views Psoriasis as a manifestation of internal disharmony that affects the skin.According to Ayurvedic principles, Psoriasis is primarily associated with an aggravated Vata dosha and impaired blood and liver functions. The accumulation of ama (toxins) in the body, due to improper digestion and metabolism, further exacerbates the condition. These imbalances lead to the inflammation of skin tissues and the formation of characteristic silvery-white scales and red patches on the skin's surface. Ayurvedic treatment for Psoriasis aims to correct the underlying imbalances in the body and eliminate accumulated toxins. It follows a holistic approach that includes dietary modifications, lifestyle changes, herbal remedies, Panchakarma therapies, and stress management techniques.`,
         cause: "Psoriasis in Ayurveda is primarily caused by an imbalance in the body's doshas – Vata, Pitta, and Kapha – along with the accumulation of toxins (ama). The vitiation of Vata dosha is considered the main contributor to the development of Psoriasis. This doshic imbalance leads to inflammation and disruption of the skin's natural functions, resulting in the characteristic red, raised, and scaled patches. Ayurvedic treatment aims to correct these imbalances, eliminate toxins, and promote overall skin health through dietary adjustments, lifestyle changes, herbal remedies, and detoxification therapies.",
         treatment: [
@@ -50,7 +52,7 @@ export const DiseaseList =[
       
     {
         name: "Acne",
-  image: [img8],
+  image: [img8,img14,img15],
   introduction: "In Ayurveda, Acne is known as 'Yauvan Pidika' or 'Mukha Dushika,' which translates to 'adolescent eruptions' or 'pimples on the face.' Acne is a common skin condition that affects the face, chest, and back. According to Ayurvedic principles, acne is primarily caused by an imbalance in the body's doshas, especially Pitta and Kapha.",
   cause: "Acne in Ayurveda is primarily caused by an imbalance in the body's doshas, especially Pitta and Kapha. Excessive Pitta leads to inflammation and heat accumulation, while imbalanced Kapha can result in excess oil production and clogged pores. Other contributing factors include impaired digestion, hormonal imbalances, poor lifestyle choices, and external factors. Ayurvedic treatment for acne focuses on restoring dosha balance, detoxification, dietary modifications, herbal remedies, stress management, and proper skincare to address the root causes and promote clear and healthy skin.",
   treatment: [
