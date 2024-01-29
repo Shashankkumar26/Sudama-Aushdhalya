@@ -40,7 +40,7 @@ margin-right: 3px;
 }
 .logo span{
 color: var(--text-color);
-font-size: 1.2rem;
+font-size: 1.2;
 font-weight: 600;
 
 }
@@ -166,3 +166,20 @@ display: none;
     }
   }
   
+  @media (max-width: 640px){
+    .logo i{
+      font-size: 16px;
+    }
+  .logo .sudama{
+    font-size: 16px;
+  }
+  .logo .Aush{
+    font-size: 16px;
+  }
+  .main{
+    font-size: 10px;
+  }
+  .user i{
+    font-size: 16px;
+  }
+  }

@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import "../style/home.css";
-import { DiseaseList as List, main, testimonials } from "../disease/diseaseList";
+import {
+  DiseaseList as List,
+  main,
+  testimonials,
+} from "../disease/diseaseList";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,6 +19,7 @@ const Home = () => {
   const [expanded, setExpanded] = useState(false);
   const { paramId } = useParams();
   const sliderRef = useRef(null);
+
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -37,17 +42,17 @@ const Home = () => {
   };
 
   useEffect(() => {
-    const intervalforhomeimg = setInterval(() => {
+    const intervalForHomeImg = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % main.length);
     }, 10000);
 
-    const interval = setInterval(() => {
+    const intervalForImageChange = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % data.image.length);
-    }, 5000);
+    }, 3000); // Change image every 2-3 seconds
 
     return () => {
-      clearInterval(intervalforhomeimg);
-      clearInterval(interval);
+      clearInterval(intervalForHomeImg);
+      clearInterval(intervalForImageChange);
     };
   }, [data.image.length]);
 
@@ -61,11 +66,11 @@ const Home = () => {
     setExpanded(false);
   }, [data, paramId]);
 
-  const handlePrevslide = () => {
+  const handlePrevSlide = () => {
     sliderRef.current.slickPrev();
   };
 
-  const handleNextslide = () => {
+  const handleNextSlide = () => {
     sliderRef.current.slickNext();
   };
 
@@ -105,7 +110,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="treatment">
+      {/* <div className="treatment">
         <div className="disease">
           {typesD.map((t) => (
             <div key={t} onClick={() => setData(List[typesD.indexOf(t)])}>
@@ -113,39 +118,51 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
-      <div className="disease-detail">
-        <div className="flex justify-center mb-5">
-          <img className="disease-image" src={currentImage} alt="" />
-        </div>
+      <div className="disease-detail mt-3">
         <div>
-          <div className="dataname">
-            <div>
-              <p>{data.name}</p>
+          {List.map((data, index) => (
+            <div className="pt-4" key={index}>
+              <div className="flex justify-center mb-5">
+                <img
+                  className="disease-image"
+                  src={data.image[currentImageIndex]}
+                  alt=""
+                />
+              </div>
+              <div>
+                <div className="dataname">
+                  <div>
+                    <p>{data.name}</p>
+                  </div>
+                </div>
+                <div className="data-introduction">
+                  <p>
+                    {expanded
+                      ? data.introduction
+                      : data.introduction.slice(0, 800)}
+                  </p>
+                  {expanded ? (
+                    <>
+                      <h3>Cause</h3>
+                      <p>{data.cause}</p>
+                      <h3>Treatment</h3>
+                      <ul>
+                        {Object.keys(data.treatment).map((key) => (
+                          <li key={key}>{data.treatment[key]}</li>
+                        ))}
+                      </ul>
+                      <h4>{data.brief}</h4>
+                    </>
+                  ) : null}
+                  <button onClick={toggleExpand}>
+                    {expanded ? "Read Less" : "Read More"}
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="data-introduction">
-            <p>
-              {expanded ? data.introduction : data.introduction.slice(0, 800)}
-            </p>
-            {expanded ? (
-              <>
-                <h3>Cause</h3>
-                <p>{data.cause}</p>
-                <h3>Treatment</h3>
-                <ul>
-                  {Object.keys(data.treatment).map((key) => (
-                    <li key={key}>{data.treatment[key]}</li>
-                  ))}
-                </ul>
-                <h4>{data.brief}</h4>
-              </>
-            ) : null}
-            <button onClick={toggleExpand}>
-              {expanded ? "Read Less" : "Read More"}
-            </button>
-          </div>
+          ))}
         </div>
       </div>
 
@@ -171,11 +188,11 @@ const Home = () => {
           </Slider>
           <i
             className="ri-arrow-drop-left-line arrow"
-            onClick={handlePrevslide}
+            onClick={handlePrevSlide}
           ></i>
           <i
             className="ri-arrow-drop-right-line arrow"
-            onClick={handleNextslide}
+            onClick={handleNextSlide}
           ></i>
         </div>
       </div>
